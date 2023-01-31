@@ -1,0 +1,186 @@
+
+
+body{
+    background-color: #19191a;
+    margin: 0;
+ 
+   
+
+}
+
+main{
+    display: flex;
+    gap: 100px;
+
+   
+}
+
+
+    
+    /* estilos de los textos */
+    .titulo{
+        padding: 10px;
+        border: solid 5px  #003b00;
+    
+    }
+    .titulo__logo{
+        position: absolute;
+            margin: 0 20px;
+        }
+h1{
+    text-align: center;
+    color: #008f11;
+    font-weight: 400;
+    font-size: 30px;
+}
+::placeholder{
+
+    color: #008f11 ;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.texto1{
+    margin-top: 15px;
+    height: 350px;
+    width: 480px;
+    resize: none;
+    margin-left: 170px;
+    background-color: #000000;
+    color: #008f11;
+    border: none;
+    box-shadow: 1px 1px 40px 2px #003b00;
+    font-size: 15px;
+}
+.texto1, .texto2:focus{
+    outline: #003b00;
+}
+.caja_informacion{
+    width: 480px;
+    margin-left: 170px;
+    text-align: center;
+}
+    
+
+h4{
+    color:#008f11 ;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+ 
+}
+.texto2{
+    margin-top: 15px;
+    height: 350px;
+    width: 280px;
+    resize: none;
+    background-color: #000000;
+    color: #008f11;
+    border: none;
+    box-shadow: 1px 1px 40px 2px #003b00;
+    font-weight: bold;
+    font-size: 15px;
+    background-image: url(../imagenes/candadocerrado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+}
+.font{
+   
+    font-family: 'Press Start 2P', cursive;
+    }
+    
+
+/* Estilo para los botones */
+
+.caja_botones{
+    display: flex;
+    margin-left: 170px;
+    width: 480px;
+   gap: 10px;
+    justify-content: center;
+  
+}
+
+.botones{
+    background:  #000000 ;
+    border: solid 5px  #003b00;
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #008f11 ;
+    cursor: pointer;
+   
+    
+    
+}
+
+
+
+.caja_boton_copiar{
+   display: flex;
+    width: 280px;
+ 
+  
+}
+.copiar{
+    margin: 10px auto;
+
+  
+}
+
+/* 
+  @media screen and (max-width: 1030px) {
+
+    main{
+        flex-direction: column;
+       
+    }
+    .caja_texto2, .caja_texto1{
+       
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    } */
+
+    @media screen and (max-width: 1030px) {
+
+        main{
+          display: block;
+        
+          
+           
+        }
+        .titulo{
+            display: block;
+            text-align: center;
+        }
+        .titulo__logo{
+            position: relative;
+            
+        }
+        .caja_texto2, .caja_texto1{
+           
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+ 
+        .texto1, .texto2, .caja_informacion, .caja_botones{
+            
+            margin: 2px 0;
+            width: 80%;
+            height: 30%;
+        }
+      
+    }
+ 
+    
+    
+  }
+
+
